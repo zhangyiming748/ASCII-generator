@@ -27,7 +27,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: zhangyiming748/stand
+          images: zhangyiming748/ascii_generator
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
