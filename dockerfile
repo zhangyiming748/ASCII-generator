@@ -1,7 +1,7 @@
 FROM python:3.6-bullseye
 # docker run -dit --name ascll -v C:\Users\zen\Github\ASCII-generator:/data python:3.6-bullseye bash
 # docker exec -it ascll bash
-COPY /etc/apt/sources.list.d/
+COPY debian.sources /etc/apt/sources.list.d/
 RUN rm /etc/apt/sources.list
 RUN apt update
 RUN apt install build-essential
