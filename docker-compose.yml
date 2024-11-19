@@ -1,0 +1,9 @@
+services:
+    python:
+        stdin_open: true
+        tty: true
+        container_name: ascii
+        volumes:
+            - /path/to/data:/data
+        image: zhangyiming748/ascii:latest
+        command: bash
