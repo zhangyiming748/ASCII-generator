@@ -10,8 +10,8 @@ from PIL import Image, ImageFont, ImageDraw, ImageOps
 
 def get_args():
     parser = argparse.ArgumentParser("Image to ASCII")
-    parser.add_argument("--input", type=str, default="data/input.mp4", help="Path to input video")
-    parser.add_argument("--output", type=str, default="data/output.mp4", help="Path to output video")
+    parser.add_argument("--input", type=str, default="input.mp4", help="Path to input video")
+    parser.add_argument("--output", type=str, default="output.mp4", help="Path to output video")
     parser.add_argument("--mode", type=str, default="simple", choices=["simple", "complex"],
                         help="10 or 70 different characters")
     parser.add_argument("--background", type=str, default="white", choices=["black", "white"],
