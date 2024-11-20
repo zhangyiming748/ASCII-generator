@@ -41,11 +41,16 @@ def main(opt):
         fps = opt.fps
     num_chars = len(CHAR_LIST)
     num_cols = opt.num_cols
+    print("while")
+    print(cap.isOpened())
     while cap.isOpened():
+        print("inner while")
         flag, frame = cap.read()
         if flag:
+            print("inner flag")
             image = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         else:
+            print(flag)
             break
         height, width = image.shape
         cell_width = width / opt.num_cols

@@ -4,7 +4,7 @@ services:
         tty: true
         container_name: ascii
         volumes:
-            - /path/to/data:/data
+            - /Users/zen/github/ASCII-generator:/data
         image: zhangyiming748/ascii:latest
         command: bash
         restart: unless-stopped
