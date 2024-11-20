@@ -1,3 +1,6 @@
+感谢 Genn 在我百思不得其解代码错误的时候给我指明了方向
+
+----
 # [PYTHON] ASCII generator
 
 ## Introduction
