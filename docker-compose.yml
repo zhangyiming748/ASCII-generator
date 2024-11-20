@@ -7,3 +7,4 @@ services:
             - /path/to/data:/data
         image: zhangyiming748/ascii:latest
         command: bash
+        restart: unless-stopped
