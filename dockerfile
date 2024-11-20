@@ -13,7 +13,7 @@ RUN apt update
 RUN apt install build-essential libgl1 libglib2.0-0 -y
 
 # 将项目的requirements.txt文件拷贝到容器内当前目录下，方便后续安装依赖
-COPY requirements.txt. .
+COPY requirements.txt .
 
 # 安装项目依赖包，移除错误的--break-system-packages参数，在容器内的Python环境正常安装
 RUN pip install -r requirements.txt --break-system-packages
